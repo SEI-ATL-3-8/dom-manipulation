@@ -3,20 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <title>Your Friendly Neighborhood Dentist</title>
+  <script src="./script.js" async defer></script>  
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
   <h1>Your Friendly Neighborhood Dentist</h1>
   <nav>
-    <span class="nav-link" id="home-link">Home</span>
+    <span class="nav-link selected" id="home-link">Home</span>
     <span class="nav-link" id="about-link">Contact</span>
     <span class="nav-link" id="procedures-link">Procedures</span>
   </nav>
-  <section  id="home-content">
+  <section id="home-content">
     <h4>Home</h4>
     <p>This is the home page! Welcome to your friendly neighborhood dentist!</p>
   </section>
   
-  <section id="about-content">
+  <section class="hidden" id="about-content">
     <h4>Contact</h4>
     <p>Your Friendly Neighborhood Dentist is located at 123 Mouth Street.</p>
     <p>Hours:</p>
@@ -25,7 +27,7 @@
       <li>Saturday - Sunday: 9am - tooth-hurty</li>
     </ul>
   </section>
-  <section id="procedures-content">
+  <section class="hidden" id="procedures-content">
     <h4>Procedures</h4>
     <ul>
       <li>Root Canal</li>
@@ -33,5 +35,6 @@
       <li>Needless Torture</li>
     </ul>
   </section>
+  
 </body>
 </html>
